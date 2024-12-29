@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Adjustment</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <canvas id="background"></canvas>
+  <div class="sliders">
+    <label for="redSlider">Red Factor</label>
+    <input type="range" id="redSlider" class="slider" min="0" max="2" step="0.1" value="1">
+
+    <label for="greenSlider">Green Factor</label>
+    <input type="range" id="greenSlider" class="slider" min="0" max="2" step="0.1" value="1">
+
+    <label for="blueSlider">Blue Factor</label>
+    <input type="range" id="blueSlider" class="slider" min="0" max="2" step="0.1" value="1">
+  </div>
+
+  <script src="myProgram.js"></script>
+</body>
+</html>
